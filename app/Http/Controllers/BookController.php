@@ -5,12 +5,16 @@ namespace App\Http\Controllers;
 use App\Book;
 use App\Exports\BooksExport;
 use App\Mail\BookingMail;
+use App\Mail\ComfirmBooking;
 use App\Room;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\DB;
 use Maatwebsite\Excel\Facades\Excel;
+use MaddHatter\LaravelFullcalendar\Calendar;
+use App\EventModel;
+use MaddHatter\LaravelFullcalendar\Event;
 
 class BookController extends Controller
 {
@@ -97,10 +101,12 @@ class BookController extends Controller
     /**
      * get all books
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * @throws \Exception
      */
     public function book(){
+
         $books= Book::all();
-        return view('backend.book')->with('books',$books);
+        return view('backend.book',compact('books'));
     }
 
     /**
@@ -112,6 +118,14 @@ class BookController extends Controller
         DB::table('books')
             ->where('id', $id)
             ->update(['book_status' => 1]);
+
+        $email=DB::table('books')
+            ->select('book_email')
+            ->where('id', $id)
+            ->first();
+
+        $mailable=new ComfirmBooking();
+        Mail::to($email->book_email)->send($mailable);
 
         DB::table('rooms')
             ->where('id', $id)
@@ -146,6 +160,8 @@ class BookController extends Controller
             'book_lname' => 'required',
             'book_email' => 'required',
             'book_contact' => 'required',
+            'motif' => 'required',
+            'pays' => 'required',
         ]);
 
         $book_name = $request['book_name'];
@@ -159,42 +175,12 @@ class BookController extends Controller
         $book_room = $request['book_room'];
         $booking_price = $request['booking_price'];
         $room_number = $request['room_number'];
-        $book_service = $request['book_service'];
+        $motif=$request['motif'];
+        $pays=$request['pays'];
         $days = $request['days'];
         $booking_date = Carbon::now();
 
-        if ($book_service){
-            $service = implode(',',$book_service);
-
-            if ($service === 'parking'){
-                $comodite=0;
-            }
-            if ($service === 'sport'){
-                $comodite=5000;
-            }
-            if ($service === 'restaurant'){
-                $comodite=15000*$days;
-            }
-            if ($service === 'restaurant,sport'){
-                $comodite=15000*$days+5000;
-            }
-            if ($service === 'parking,sport'){
-                $comodite=5000;
-            }
-            if ($service === 'restaurant,parking'){
-                $comodite=15000*$days;
-            }
-            if ($service === 'restaurant,parking,sport'){
-                $comodite=15000*$days+5000;
-            }
-            if ($service==null){
-                $comodite=0;
-            }
-        }
-        if ($book_service==null){
-            $comodite=0;
-        }
-        $total=$comodite+$booking_price;
+        $total=$booking_price;
 
         $book = new Book();
         $book->book_name=$book_name;
@@ -208,8 +194,8 @@ class BookController extends Controller
         $book->book_room=$book_room;
         $book->booking_date=$booking_date;
         $book->booking_price=$booking_price;
-        $book->book_service=$service;
-        $book->service_price=$comodite;
+        $book->motif=$motif;
+        $book->pays=$pays;
         $book->booking_total=$total;
 
 
@@ -231,6 +217,8 @@ class BookController extends Controller
             'book_lname' => 'required',
             'book_email' => 'required',
             'book_contact' => 'required',
+            'motif' => 'required',
+            'pays' => 'required',
         ]);
 
         $book_name = $request['book_name'];
@@ -244,42 +232,12 @@ class BookController extends Controller
         $book_room = $request['book_room'];
         $booking_price = $request['booking_price'];
         $room_number = $request['room_number'];
-        $book_service = $request['book_service'];
+        $motif=$request['motif'];
+        $pays=$request['pays'];
         $days = $request['days'];
         $booking_date = Carbon::now();
 
-        if ($book_service){
-            $service = implode(',',$book_service);
-
-            if ($service === 'parking'){
-                $comodite=0;
-            }
-            if ($service === 'sport'){
-                $comodite=5000;
-            }
-            if ($service === 'restaurant'){
-                $comodite=15000*$days;
-            }
-            if ($service === 'restaurant,sport'){
-                $comodite=15000*$days+5000;
-            }
-            if ($service === 'parking,sport'){
-                $comodite=5000;
-            }
-            if ($service === 'restaurant,parking'){
-                $comodite=15000*$days;
-            }
-            if ($service === 'restaurant,parking,sport'){
-                $comodite=15000*$days+5000;
-            }
-            if ($service==null){
-                $comodite=0;
-            }
-        }
-        if ($book_service==null){
-            $comodite=0;
-        }
-        $total=$comodite+$booking_price;
+        $total=$booking_price;
 
         $book = new Book();
         $book->book_name=$book_name;
@@ -293,8 +251,8 @@ class BookController extends Controller
         $book->book_room=$book_room;
         $book->booking_date=$booking_date;
         $book->booking_price=$booking_price;
-        $book->book_service=$service;
-        $book->service_price=$comodite;
+        $book->motif=$motif;
+        $book->pays=$pays;
         $book->booking_total=$total;
 
 

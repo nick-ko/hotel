@@ -12,12 +12,14 @@
     <link rel="stylesheet" href="{{asset('front/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('front/vendors/owl-carousel/owl.carousel.min.css')}}">
     <link rel="stylesheet" href="{{asset('front/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css')}}">
-    <link rel="stylesheet" href="{{asset('front/vendors/nice-select/css/nice-select.css')}}">
+
     <link rel="stylesheet" href="{{asset('front/vendors/owl-carousel/owl.carousel.min.css')}}">
     <!-- main css -->
     <link rel="stylesheet" href="{{asset('front/css/lightgallery.css')}}">
     <link rel="stylesheet" href="{{asset('front/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('front/css/responsive.css')}}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
     {!! Charts::styles() !!}
 </head>
 <body>
@@ -39,7 +41,6 @@
 <script src="{{asset('front/js/jquery.ajaxchimp.min.js')}}"></script>
 <script src="{{asset('front/js/mail-script.js')}}"></script>
 <script src="{{asset('front/vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js')}}"></script>
-<script src="{{asset('front/vendors/nice-select/js/jquery.nice-select.js')}}"></script>
 <script src="{{asset('front/js/mail-script.js')}}"></script>
 <script src="{{asset('front/js/stellar.js')}}"></script>
 <script src="{{asset('front/vendors/lightbox/simpleLightbox.min.js')}}"></script>
@@ -58,6 +59,13 @@
 <script src="{{asset('front/js/lg-thumbnail.min.js')}}"></script>
 <script src="{{asset('front/js/lg-fullscreen.min.js')}}"></script>
 <script src="{{asset('front/js/custom.js')}}"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+<script>
+    // To style only selects with the my-select class
+    $('.my-select').selectpicker();
+</script>
+
 
 <script>
 

@@ -54,4 +54,14 @@ class HomeController extends Controller
 
         return redirect()->route('contact')->with(['message' => 'votre message a ete envoyé avec succes']);
     }
+
+    public function gallery(){
+        $gallery=DB::table('galleries')->get();
+        return view('frontend.gallery',compact('gallery'));
+    }
+
+    public function blog(){
+        $articles=DB::table('blogs')->where('status',0)->get();
+        return view('frontend.blog',compact('articles'));
+    }
 }

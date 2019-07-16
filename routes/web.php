@@ -41,6 +41,11 @@ Route::get('/contact', [
     'uses' => 'HomeController@contact'
 ]);
 
+Route::get('/gallery', [
+    'as' => 'gallery',
+    'uses' => 'HomeController@gallery'
+]);
+
 Route::post('/contact-us', [
     'uses' => 'HomeController@contact_us'
 ]);
@@ -83,6 +88,24 @@ Route::post('/dashboard/save-booking', [
 Route::post('/dashboard/backend-save-booking', [
     'uses' => 'BookController@backend_booking'
 ]);
+Route::get('/blog', [
+    'as' => 'blog',
+    'uses' => 'HomeController@blog'
+]);
+Route::get('/blog/article/{id}', [
+    'as' => 'article',
+    'uses' => 'BlogController@show'
+]);
+
+Route::post('/blog/article/comment', [
+    'uses' => 'BlogController@comment'
+]);
+Route::post('/blog/article/search', [
+    'uses' => 'BlogController@search'
+]);
+
+
+//admin root
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dash', [
@@ -165,6 +188,44 @@ Route::middleware(['auth'])->group(function () {
         'as' => 'dash.about',
         'uses' => 'BackendController@about'
     ]);
+
+    Route::get('/dashboard/gallery', [
+        'as' => 'dash.gallery',
+        'uses' => 'BackendController@gallery'
+    ]);
+    Route::post('/gallery/save-image', [
+        'uses' => 'BackendController@save'
+    ]);
+
+    Route::get('/dashboard/add-article', [
+        'as' => 'add.article',
+        'uses' => 'BlogController@create'
+    ]);
+    Route::post('/dashboard/save-article', [
+        'uses' => 'BlogController@store'
+    ]);
+    Route::get('/dashboard/blog', [
+        'as' => 'dash.blog',
+        'uses' => 'BlogController@index'
+    ]);
+    Route::post('/dashboard/save-home', [
+        'uses' => 'WebController@store_home'
+    ]);
+    Route::post('/dashboard/save-about', [
+        'uses' => 'WebController@store_about'
+    ]);
+
+    //web
+
+    Route::get('/dashboard/home', [
+        'as' => 'dash.home',
+        'uses' => 'WebController@home'
+    ]);
+    Route::get('/dashboard/about', [
+        'as' => 'dash.about',
+        'uses' => 'WebController@about'
+    ]);
+
 
 
 

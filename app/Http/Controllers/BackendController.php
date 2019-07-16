@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Book;
 use App\Category;
+use App\gallery;
 use App\Room;
 use App\User;
 use Illuminate\Support\Facades\Hash;
@@ -101,5 +102,33 @@ class BackendController extends Controller
 
     public function about(){
         return view('backend.website.about');
+    }
+    public function gallery(){
+        $gallery=DB::table('galleries')->get();
+        return view('backend.gallery',compact('gallery'));
+    }
+    public function save(Request $request){
+        $this->validate($request, [
+            'image' => 'required'
+        ]);
+
+        $image = $request->file('image');
+
+        $gallery=new gallery();
+
+        if ($image)
+        {
+            $ext = strtolower($image->getClientOriginalExtension());
+            $image_name=$image->getClientOriginalName();
+            $image_full_name = $image_name;
+            $upload_path = 'images/galleries/';
+            $gallery_image = $upload_path . $image_full_name;
+            $success = $image->move($upload_path, $image_full_name);
+            if ($success) {
+                $gallery->image=$gallery_image;
+                $gallery->save();
+                return redirect()->route('dash.gallery')->with(['message' => 'image ajouté avec succes']);
+            }
+        }
     }
 }

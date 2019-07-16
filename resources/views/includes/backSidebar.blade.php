@@ -34,6 +34,22 @@
                     <a href="{{route('dash.event')}}">
                         <i class="fas  fa-birthday-cake"></i>Evenements</a>
                 </li>
+                <li>
+                    <a href="{{route('dash.gallery')}}">
+                        <i class="fas fa-image"></i>Gallery</a>
+                </li>
+                <li class="has-sub">
+                    <a class="js-arrow" href="#">
+                        <i class="fas fa-blogger-b"></i>Blog</a>
+                    <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
+                        <li>
+                            <a href="{{route('dash.blog')}}">Liste article</a>
+                        </li>
+                        <li>
+                            <a href="{{route('add.article')}}">Ajouter</a>
+                        </li>
+                    </ul>
+                </li>
                 @if((Auth::user()->role) === 'admin')
                 <li>
                     <a href="{{route('users')}}">
@@ -44,19 +60,13 @@
                             <i class="fas fa-desktop"></i>Site Web</a>
                         <ul class="navbar-mobile-sub__list list-unstyled js-sub-list">
                             <li>
-                                <a href="">Acceuil</a>
+                                <a href="{{route('dash.home')}}">Acceuil</a>
                             </li>
                             <li>
                                 <a href="{{route('dash.about')}}">A propos</a>
                             </li>
                             <li>
                                 <a href="">Service</a>
-                            </li>
-                            <li>
-                                <a href="">Evenement</a>
-                            </li>
-                            <li>
-                                <a href="">Chambre & Suite</a>
                             </li>
                             <li>
                                 <a href="">Contact</a>

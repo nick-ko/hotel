@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <!-- Required meta tags-->
@@ -36,6 +36,8 @@
     <link href="{{asset('back/vendor/dataTables/datatables.min.css')}}" rel="stylesheet" media="all">
     <!-- include summernote css/js -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+    <!-- include fullcalendar css/js -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
 
 </head>
 
@@ -199,6 +201,8 @@
 <script src="{{asset('back/vendor/select2/select2.min.js')}}"></script>
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>
+
 
 <!-- Main JS-->
 <script src="{{asset('back/js/main.js')}}"></script>

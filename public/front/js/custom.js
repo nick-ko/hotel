@@ -64,13 +64,13 @@
         daysOfWeekDisabled: [0, 6]
     });
     
-     /*---------gallery isotope js-----------*/
+     /*---------gallerie isotope js-----------*/
     function galleryMasonry(){
-        if ( $('#gallery').length ){
-            $('#gallery').imagesLoaded( function() {
+        if ( $('#gallerie').length ){
+            $('#gallerie').imagesLoaded( function() {
               // images have loaded
                 // Activate isotope in container
-                $("#gallery").isotope({
+                $("#gallerie").isotope({
                     itemSelector: ".gallery_item",
                     layoutMode: 'masonry',
                     animationOptions: {

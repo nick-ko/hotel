@@ -28,10 +28,9 @@
                   <th>Email</th>
                   <th>adulte</th>
                   <th>enfant</th>
-                  <th>Date d'arriver</th>
-                  <th>Date de depart</th>
+                  <th>Duree sejour</th>
                   <th>chambre reservé</th>
-                  <th>Service</th>
+                  <th>pays</th>
                   <th>Total</th>
                   <th>status</th>
                   <th>action</th>
@@ -49,10 +48,9 @@
                     <td>{{$b->book_email}}</td>
                     <td>{{$b->adult_number}}</td>
                     <td>{{$b->child_number}}</td>
-                    <td>{{$b->book_from}}</td>
-                    <td>{{$b->book_to}}</td>
+                    <td>{{$b->book_from}} au {{$b->book_to}}</td>
                     <td>{{$b->book_room}}-{{$code_room->room_code}}</td>
-                    <td>{{$b->book_service}}</td>
+                    <td>{{$b->pays}}</td>
                     <td>{{$b->booking_total}} FCFA</td>
                     <td>
                         @if(($b->book_status) == 0)
@@ -143,6 +141,7 @@
             </form>
         </div>
     </div>
+
 
 @endsection
 

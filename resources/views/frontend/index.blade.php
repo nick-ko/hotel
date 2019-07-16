@@ -18,6 +18,8 @@
                         <li class="nav-item"><a class="nav-link" href="{{ route('service') }}">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('room') }}">Chambres & suites</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('event') }}">Evenements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>
@@ -52,35 +54,33 @@
                                 <div class="col-md-4">
                                     <div class="book_tabel_item">
                                         <div class="form-group">
-                                            <div class='input-group date' id='datetimepicker11'>
-                                                <input type='text' name="book_from" class="form-control" placeholder="Date d'arriver"/>
-                                                <span class="input-group-addon">
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>
+                                            <div class='form-group date' id='datetimepicker11'>
+                                                <label for="">Date d'arriver</label>
+                                                <input type='date' name="book_from" class="form-control" placeholder="Date d'arriver" style="background-color: #04091e;border-color: grey"/>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class='input-group date' id='datetimepicker1'>
-                                                <input type='text' name="book_to" class="form-control" placeholder="Date de depart"/>
-                                                <span class="input-group-addon">
-                                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>
+                                            <div class='form-group date' id='datetimepicker1'>
+                                                <label for="">Date de depart</label>
+                                                <input type='date' name="book_to" class="form-control" placeholder="Date de depart" style="background-color: #04091e;border-color: grey"/>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
                                     <div class="book_tabel_item">
-                                        <div class="input-group">
-                                            <select class="wide" name="adult_number">
+                                        <div class="form-group">
+                                            <label for="">Nombre d'adulte</label>
+                                            <select class="form-control" name="adult_number" style="background-color: #04091e;border-color: grey">
                                                 <option data-display="Adulte">Adulte</option>
                                                 <option value="1">1</option>
                                                 <option value="2">2</option>
                                                 <option value="3">+3</option>
                                             </select>
                                         </div>
-                                        <div class="input-group">
-                                            <select class="wide" name="child_number">
+                                        <div class="form-group">
+                                            <label for="">Nombre d'enfant</label>
+                                            <select class="form-control" name="child_number" style="background-color: #04091e;border-color: grey">
                                                 <option data-display="Enfant">Enfant</option>
                                                 <option value="0">0</option>
                                                 <option value="1">1</option>
@@ -91,13 +91,15 @@
                                 </div>
                                 <div class="col-md-4">
                                     <div class="book_tabel_item">
-                                        <div class="input-group">
-                                            <select class="wide" name="book_room" type="text">
+                                        <div class="form-group">
+                                            <label for="">Date d'arriver</label>
+                                            <select class="form-control" name="book_room" type="text" style="background-color: #04091e;border-color: grey">
                                                 <option data-display="Type de chambre">Type de chambre</option>
                                                 @foreach($categories as $category)
                                                     <option value="{{$category->category_title}}">{{$category->category_title}}</option>
                                                 @endforeach
                                             </select>
+                                            <br>
                                         </div>
                                         <button type="submit" class="book_now_btn button_hover" style="cursor: pointer">Reservation</button>
                                     </div>

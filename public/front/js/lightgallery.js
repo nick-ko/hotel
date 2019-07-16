@@ -487,7 +487,7 @@
         document.body.insertAdjacentHTML('beforeend', '<div class="lg-backdrop"></div>');
         _lgUtils2.default.setVendor(document.querySelector('.lg-backdrop'), 'TransitionDuration', this.s.backdropDuration + 'ms');
 
-        // Create gallery items
+        // Create gallerie items
         for (i = 0; i < this.items.length; i++) {
             list += '<div class="lg-item"></div>';
         }
@@ -516,7 +516,7 @@
             _lgUtils2.default.addClass(this.outer, 'lg-use-css3');
         }
 
-        // For fixed height gallery
+        // For fixed height gallerie
         _this.setTop();
         _lgUtils2.default.on(window, 'resize.lg orientationchange.lg', function () {
             setTimeout(function () {
@@ -565,11 +565,11 @@
             this.outer.querySelector('.lg-toolbar').insertAdjacentHTML('beforeend', '<a id="lg-download" target="_blank" download class="lg-download lg-icon"></a>');
         }
 
-        // Store the current scroll top value to scroll back after closing the gallery..
+        // Store the current scroll top value to scroll back after closing the gallerie..
         this.prevScrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     };
 
-    // For fixed height gallery
+    // For fixed height gallerie
     Plugin.prototype.setTop = function () {
         if (this.s.height !== '100%') {
             var wH = window.innerHeight;
@@ -887,7 +887,7 @@
             var _speed = 0;
 
             // Do not change the delay value because it is required for zoom plugin.
-            // If gallery opened from direct url (hash) speed value should be 0
+            // If gallerie opened from direct url (hash) speed value should be 0
             if (delay && !_lgUtils2.default.hasClass(document.body, 'lg-from-hash')) {
                 _speed = delay;
             }
@@ -1466,7 +1466,7 @@
 
         if (_this.s.closable) {
 
-            // If you drag the slide and release outside gallery gets close on chrome
+            // If you drag the slide and release outside gallerie gets close on chrome
             // for preventing this check mousedown and mouseup happened on .lg-item or lg-outer
             _lgUtils2.default.on(_this.outer, 'mousedown.lg', function (e) {
 
@@ -1500,7 +1500,7 @@
         document.documentElement.scrollTop = _this.prevScrollTop;
 
         /**
-         * if d is false or undefined destroy will only close the gallery
+         * if d is false or undefined destroy will only close the gallerie
          * plugins instance remains with the element
          *
          * if d is true destroy will completely remove the plugin

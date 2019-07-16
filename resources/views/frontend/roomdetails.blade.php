@@ -18,6 +18,8 @@
                         <li class="nav-item"><a class="nav-link" href="{{ route('service') }}">Services</a></li>
                         <li class="nav-item active"><a class="nav-link" href="{{ route('room') }}">Chambres & suites</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('event') }}">Evenements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>

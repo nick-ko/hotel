@@ -1,10 +1,11 @@
 @extends('layouts.front')
 @section('content')
+
     <header class="header_area">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="{{ route('home') }}"><img src="{{URL::to('front/image/Logo.png')}}" alt=""></a>
+                <a class="navbar-brand logo_h" href="index.html"><img src="{{URL::to('front/image/Logo.png')}}" alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -18,6 +19,8 @@
                         <li class="nav-item"><a class="nav-link" href="{{ route('service') }}">Services</a></li>
                         <li class="nav-item active"><a class="nav-link" href="{{ route('room') }}">Chambres & suites</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('event') }}">Evenements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>
@@ -56,7 +59,7 @@
                                 <div class="book_tabel_item">
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <select class="wide" name="search_category">
+                                            <select class="form-control" name="search_category" style="background-color: #04091e;border-color: grey">
                                                 <option data-display="Category">Category</option>
                                                 @foreach($categories as $category)
                                                     <option value="{{$category->id}}">{{$category->category_title}}</option>
@@ -69,7 +72,7 @@
                             <div class="col-md-4">
                                 <div class="book_tabel_item">
                                     <div class="input-group">
-                                        <select class="wide" name="search_price">
+                                        <select class="form-control" name="search_price" style="background-color: #04091e;border-color: grey">
                                             <option data-display="Prix"> Prix </option>
                                             <option value="0,25000">0 - 25000 FCFA</option>
                                             <option value="25000,50000">25000 - 50000 FCFA</option>

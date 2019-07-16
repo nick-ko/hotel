@@ -1,5 +1,6 @@
 @extends('layouts.front')
 @section('content')
+
     <header class="header_area">
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -13,11 +14,13 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
                     <ul class="nav navbar-nav menu_nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Acceuil</a></li>
+                        <li class="nav-item "><a class="nav-link" href="{{ route('home') }}">Acceuil</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('about') }}">A propos</a></li>
                         <li class="nav-item active"><a class="nav-link" href="{{ route('service') }}">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('room') }}">Chambres & suites</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('event') }}">Evenements</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('blog') }}">Blog</a></li>
+                        <li class="nav-item "><a class="nav-link" href="{{ route('gallery') }}">Gallery</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('contact') }}">Contact</a></li>
                     </ul>
                 </div>

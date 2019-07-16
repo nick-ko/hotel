@@ -18,16 +18,13 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="price" class="control-label mb-1">Date d'arriver</label>
-                                <div class='input-group date' id='datetimepicker11'>
-                                    <input type='text' name="book_from" class="form-control" placeholder="Date d'arriver"/>
-                                    <span class="input-group-addon">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    </span>
+                                <div  id='datetimepicker11'>
+                                    <input type='date' name="book_from" class="form-control" placeholder="Date d'arriver"/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="adult" class="control-label mb-1">Adulte</label>
-                                <select class="wide" id="adult" name="adult_number">
+                                <select class="form-control" id="adult" name="adult_number">
                                     <option data-display="Adulte">Adulte</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
@@ -40,20 +37,17 @@
 
                             <div class="form-group">
                                 <label for="price" class="control-label mb-1">Date de depart</label>
-                                <div class='input-group date' id='datetimepicker1'>
-                                    <input type='text' name="book_to" class="form-control" placeholder="Date de depart"/>
-                                    <span class="input-group-addon">
-                                        <i class="fa fa-calendar" aria-hidden="true"></i>
-                                    </span>
+                                <div  id='datetimepicker1'>
+                                    <input type='date' name="book_to" class="form-control" placeholder="Date de depart"/>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label for="child" class="control-label mb-1">Enfant</label>
-                                <select class="wide" id="child" name="child_number">
+                                <select class="form-control" id="child" name="child_number">
                                     <option data-display="Enfant">Enfant</option>
                                     <option value="0">0</option>
-                                    <option value="2">1</option>
-                                    <option value="3">+2</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
                                 </select>
                             </div>
                         </div>
