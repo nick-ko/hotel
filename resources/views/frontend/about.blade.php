@@ -4,7 +4,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index.html"><img src="{{URL::to('front/image/Logo.png')}}" alt=""></a>
+                <a class="navbar-brand logo_h" href="{{route('home')}}"><img src="{{URL::to('front/image/logo.jpg')}}" alt="" style="height: 80px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-md-6 d_flex align-items-center">
                     <div class="about_content ">
-                        <h2 class="title title_color">Bienvenue <br> dans le confort de <br> royal hôtel </h2>
+                        <h2 class="title title_color">Bienvenue <br> dans le confort de <br> Bushman hôtel café </h2>
                         <p>
                             Le meilleur hébergement de l’Afrique de l’ouest avec des services et des installations de renommée internationale.
                             Découvrez la convivialité et l’hospitalité ouest africaine avec des services et un confort haut de gamme.
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <img class="img-fluid" src="{{URL::to('front/image/bg-8.jpg')}}" alt="img">
+                    <img class="img-fluid" src="{{URL::to('front/image/about.jpg')}}" alt="img">
                 </div>
             </div>
         </div>

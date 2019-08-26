@@ -30,7 +30,6 @@
                   <th>enfant</th>
                   <th>Duree sejour</th>
                   <th>chambre reservé</th>
-                  <th>pays</th>
                   <th>Total</th>
                   <th>status</th>
                   <th>action</th>
@@ -40,17 +39,16 @@
             @foreach($books as $b)
                 <tr>
                     <?php
-                    $code_room=DB::table('rooms')
-                        ->where('room_name', $b->book_room)
+                    $room=DB::table('rooms')
+                        ->where('id', $b->book_room)
                         ->first();
                     ?>
-                    <td>{{$b->book_name}}</td>
+                    <td>{{$b->text}}</td>
                     <td>{{$b->book_email}}</td>
                     <td>{{$b->adult_number}}</td>
                     <td>{{$b->child_number}}</td>
-                    <td>{{$b->book_from}} au {{$b->book_to}}</td>
-                    <td>{{$b->book_room}}-{{$code_room->room_code}}</td>
-                    <td>{{$b->pays}}</td>
+                    <td>{{$b->start_date}} au {{$b->end_date}}</td>
+                    <td>{{$room->room_name}}-{{$room->room_code}}</td>
                     <td>{{$b->booking_total}} FCFA</td>
                     <td>
                         @if(($b->book_status) == 0)
@@ -61,6 +59,12 @@
                     </td>
                     <td>
                         <div class="table-data-feature">
+                            <a href="{{URL::to('/dashboard/reservation/detail/'.$b->id)}}" class="item" data-toggle="tooltip"   data-placement="top" title="Detail">
+                                <i class="zmdi zmdi-eye"></i>
+                            </a>
+                            <a href="{{URL::to('/dashboard/archive-book/'.$b->id)}}" class="item" data-toggle="tooltip"   data-placement="top" title="Achiver">
+                                <i class="zmdi zmdi-archive"></i>
+                            </a>
                             <a href="{{URL::to('dashboard/delete-book/'.$b->id)}}" class="item" data-toggle="tooltip" data-placement="top" title="Supprimer">
                                 <i class="zmdi zmdi-delete"></i>
                             </a>

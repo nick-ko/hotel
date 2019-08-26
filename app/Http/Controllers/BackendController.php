@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Book;
 use App\Category;
+use App\Costumers;
 use App\gallery;
 use App\Room;
 use App\User;
@@ -41,10 +42,12 @@ class BackendController extends Controller
         $categories=Category::all();
         $rooms = Room::all();
         $books = Book::all();
+        $costumers= Costumers::all();
 
         return view('backend.dash')->with('categories',$categories)
             ->with('rooms',$rooms)
-            ->with('books',$books);
+            ->with('books',$books)
+            ->with('costumers',$costumers);
     }
 
     /**

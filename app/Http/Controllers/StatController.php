@@ -38,7 +38,9 @@ class StatController extends Controller
             ->dimensions(490, 550)
             ->responsive(false);
 
-        $booking=Book::all();
+        $booking= DB::table('books')
+            ->where('archived','=','1')
+            ->get();
         return view('backend.stats',compact('chart','pie','total','booking'));
     }
 

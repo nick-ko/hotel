@@ -5,7 +5,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index.html"><img src="{{URL::to('front/image/Logo.png')}}" alt=""></a>
+                <a class="navbar-brand logo_h" href="{{route('home')}}"><img src="{{URL::to('front/image/logo.jpg')}}" alt="" style="height: 80px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -59,8 +59,8 @@
                                 <div class="book_tabel_item">
                                     <div class="form-group">
                                         <div class="input-group">
-                                            <select class="form-control" name="search_category" style="background-color: #04091e;border-color: grey">
-                                                <option data-display="Category">Category</option>
+                                            <select class="form-control" name="search_category" style="background-color: #04091e;border-color: grey" required>
+                                                <option value="">Selectionnez le prix</option>
                                                 @foreach($categories as $category)
                                                     <option value="{{$category->id}}">{{$category->category_title}}</option>
                                                 @endforeach
@@ -72,8 +72,8 @@
                             <div class="col-md-4">
                                 <div class="book_tabel_item">
                                     <div class="input-group">
-                                        <select class="form-control" name="search_price" style="background-color: #04091e;border-color: grey">
-                                            <option data-display="Prix"> Prix </option>
+                                        <select class="form-control" name="search_price" style="background-color: #04091e;border-color: grey" required>
+                                            <option value="">Selectionnez le prix</option>
                                             <option value="0,25000">0 - 25000 FCFA</option>
                                             <option value="25000,50000">25000 - 50000 FCFA</option>
                                             <option value="50000,100000">50000 - 100000 FCFA</option>
@@ -105,6 +105,7 @@
                 <p>Vous y vivrez l'accueil d'une tres grande maison,expression d'un art de vivre a l'ivoirienne fait pour vous.</p>
             </div>
             <div class="row accomodation_two">
+                @if(count($rooms)>0)
                 @foreach($rooms as $room)
                     <div class="card mb-3" style="width: 1100px;">
                         <div class="row no-gutters">
@@ -116,11 +117,10 @@
                                     </ol>
                                     <div class="carousel-inner" id="animated-thumbnials">
                                         <a class="carousel-item active" href="{{URL::to($room->room_image)}}">
-                                            <img src="{{URL::to($room->room_image)}}" class="card-img" alt="..." style="height: 250px">
+                                            <img src="{{URL::to($room->room_image)}}" class="card-img" alt="..." style="height:250px;">
                                         </a>
-
                                         <a class="carousel-item" href="{{URL::to($room->room_photo)}}">
-                                            <img src="{{URL::to($room->room_photo)}}" class="card-img" alt="..." style="height: 250px">
+                                            <img src="{{URL::to($room->room_photo)}}" class="card-img" alt="..." style="height:250px;">
                                         </a>
                                     </div>
                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -158,7 +158,7 @@
                                                 <i class="fa fa"></i></span>
                                         </div>
                                     </div>
-                                    <button data-toggle="modal" data-target="#largeModal" class="btn btn-outline-warning pull-right" style="cursor: pointer">Réserver</button>
+                                    <button data-toggle="modal" data-target="#largeModal" class="btn btn-outline-primary pull-right" style="cursor: pointer">Réserver</button>
                                 </div>
                             </div>
                         </div>
@@ -168,12 +168,16 @@
                 @include('includes.bookmodal')
                 <!-- end modal large -->
                 @endforeach
+                @else
+                    <div class="text-center">
+                        <p>Aucune Chambre disponible.</p>
+                    </div>
+                @endif
 
             </div>
         </div>
     </section>
     <!--================ Accomodation Area  =================-->
-
 
 @endsection
 

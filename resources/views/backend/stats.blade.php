@@ -51,36 +51,55 @@
             <div class="col-md-12">
                 <!-- DATA TABLE -->
                 <div class="table-responsive table-responsive-data2">
-                    <table class="table table-data2" id="#myTable">
+                    <table class="table table-striped" id="#myTable">
                         <thead>
                         <tr>
-                            <th>Date reservation</th>
-                            <th>Duree sejour</th>
                             <th>Nom</th>
-                            <th>
-                                Chambre</th>
+                            <th>Email</th>
+                            <th>adulte</th>
+                            <th>enfant</th>
+                            <th>Duree sejour</th>
+                            <th>chambre reservé</th>
+                            <th>Total</th>
+                            <th>status</th>
+                            <th>action</th>
                         </tr>
                         </thead>
                         <tbody>
                         @foreach($booking as $b)
-                            <tr class="tr-shadow">
-                                <td>{{$b->booking_date}}</td>
-                                <td>du {{$b->book_from}} au {{$b->book_to}}</td>
-                                <td>{{$b->book_name}}  {{$b->book_lname}}</td>
-                                <td>{{$b->book_room}}</td>
+                            <tr>
+                                <?php
+                                $room=DB::table('rooms')
+                                    ->where('id', $b->book_room)
+                                    ->first();
+                                ?>
+                                <td>{{$b->text}}</td>
+                                <td>{{$b->book_email}}</td>
+                                <td>{{$b->adult_number}}</td>
+                                <td>{{$b->child_number}}</td>
+                                <td>{{$b->start_date}} au {{$b->end_date}}</td>
+                                <td>{{$room->room_name}}-{{$room->room_code}}</td>
+                                <td>{{$b->booking_total}} FCFA</td>
+                                <td>
+                                    @if(($b->book_status) == 0)
+                                        <a href="{{URL::to('/dashboard/confirm-book/'.$b->id)}}" class="btn btn-primary btn-sm item" data-toggle="tooltip" data-placement="top" title="En Attente"><i class="fa fa-check"></i></a>
+                                    @else
+                                        <button  class="btn btn-success btn-sm item" data-toggle="tooltip" data-placement="top" title="Comfirmer"><i class="fa fa-check"></i></button>
+                                    @endif
+                                </td>
                                 <td>
                                     <div class="table-data-feature">
-                                        <a href="{{URL::to('dashboard/edit-user/')}}" class="item" data-toggle="tooltip" data-placement="top" title="Editer">
-                                            <i class="zmdi zmdi-edit"></i>
+                                        <a href="{{URL::to('/dashboard/reservation/detail/'.$b->id)}}" class="item" data-toggle="tooltip"   data-placement="top" title="Detail">
+                                            <i class="zmdi zmdi-eye"></i>
                                         </a>
-                                        <a href="{{URL::to('dashboard/delete-user/')}}" class="item" data-toggle="tooltip" data-placement="top" title="Supprimer">
+                                        <a href="{{URL::to('dashboard/delete-book/'.$b->id)}}" class="item" data-toggle="tooltip" data-placement="top" title="Supprimer">
                                             <i class="zmdi zmdi-delete"></i>
                                         </a>
                                     </div>
                                 </td>
                             </tr>
                             <tr class="spacer"></tr>
-                            @endforeach
+                        @endforeach
                         </tbody>
                     </table>
                 </div>

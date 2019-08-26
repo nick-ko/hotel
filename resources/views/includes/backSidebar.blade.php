@@ -2,7 +2,7 @@
 <aside class="menu-sidebar d-none d-lg-block">
     <div class="logo">
         <a href="#">
-            <img src="{{URL::to('front/image/Logo.png')}}" alt="Cool Admin" />
+            <img src="{{URL::to('front/image/logo.jpg')}}" style="height: 70px; width: 90px" alt="Cool Admin" />
         </a>
     </div>
     <div class="menu-sidebar__content js-scrollbar1">
@@ -15,6 +15,15 @@
                 <li>
                     <a href="{{route('book')}}">
                         <i class="fas fa-credit-card"></i>Reservation</a>
+                </li>
+                <li>
+                    <a href="{{route('costumers')}}">
+                        <i class="fas fa-users"></i>Clients</a>
+                </li>
+                <li>
+                    <a href="{{route('prestation')}}">
+                        <i class="fas fa-hashtag"></i>Prestations
+                    </a>
                 </li>
                 @if((Auth::user()->role) === 'admin')
                 <li>

@@ -17,7 +17,7 @@
     </div>
     </div>
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-12">
             <!-- DATA TABLE -->
             <div class="table-responsive table-responsive-data2">
                 <table class="table table-data2" id="#myTable">

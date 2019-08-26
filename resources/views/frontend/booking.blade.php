@@ -5,7 +5,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index.html"><img src="{{URL::to('front/image/Logo.png')}}" alt=""></a>
+                <a class="navbar-brand logo_h" href="index.html"><img src="{{URL::to('front/image/logo.jpg')}}" alt="" style="height: 80px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -65,13 +65,12 @@
                                     <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                 </ol>
-                                <div class="carousel-inner " id="animated-thumbnials">
+                                <div class="carousel-inner" id="animated-thumbnials">
                                     <a class="carousel-item active" href="{{URL::to($r->room_image)}}">
-                                        <img src="{{URL::to($r->room_image)}}" class="card-img" alt="..." style="height: 250px">
+                                        <img src="{{URL::to($r->room_image)}}" class="card-img" alt="..." style="height:250px; width:500px">
                                     </a>
-
                                     <a class="carousel-item" href="{{URL::to($r->room_photo)}}">
-                                        <img src="{{URL::to($r->room_photo)}}" class="card-img" alt="..." style="height: 250px">
+                                        <img src="{{URL::to($r->room_photo)}}" class="card-img" alt="..." style="height:250px; width:500px">
                                     </a>
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -83,16 +82,14 @@
                                     <span class="sr-only">Next</span>
                                 </a>
                             </div>
-
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
                                 <div style="display: inline">
-                                    <h5 class="card-title" >{{$r->room_name}}
-                                        <span class="pull-right">Disponible: {{$r->room_number}}</span>
-                                    </h5>
+                                    <h5 class="card-title" >{{$r->room_name}}</h5>
                                 </div>
-
+                                <form action="{{url('/dashboard/book/')}}" method="post">
+                                    @csrf
                                 <div class="row">
                                     <div class="col-md-7">
                                         <ul class="list-group list-group-flush">
@@ -106,9 +103,15 @@
                                             {{$r->room_description}}
                                         </p>
                                     </div>
-
                                 </div>
-                                <button data-toggle="modal" data-target="#largeModal" class="btn btn-outline-warning pull-right" style="cursor: pointer">Réserver</button>
+                                    <input id="title" name="book_room" type="hidden" value="{{$r->id}}" >
+                                    <input id="title" name="book_from" type="hidden" value="{{$book_from}}" >
+                                    <input id="title" name="book_to" type="hidden" value="{{$book_to}}" >
+                                    <input id="title" name="adult_number" type="hidden" value="{{$adult_number}}" >
+                                    <input id="title" name="days" type="hidden" value="{{$days}}" >
+                                    <input id="title" name="child_number" type="hidden" value="{{$child_number}}" >
+                                    <button type="submit"  class="btn btn-outline-warning pull-right" style="cursor: pointer">Réserver</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -151,7 +154,6 @@
                                             <div class="form-group">
                                                 <label for="price" class="control-label mb-1">Votre Email</label>
                                                 <input id="price" name="book_email" type="text" class="form-control" aria-required="true" aria-invalid="false" >
-                                                <input id="title" name="room_number" type="hidden" value="{{$r->room_number}}" >
                                             </div>
                                             <div class="form-group">
                                                 <label for="price" class="control-label mb-1">Votre Contact</label>

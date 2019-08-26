@@ -28,8 +28,10 @@ class CreateBooksTable extends Migration
             $table->string('book_service');
             $table->date('booking_date');
             $table->integer('booking_price');
-            $table->integer('service_price');
             $table->integer('booking_total');
+            $table->string('motif');
+            $table->string('pays');
+            $table->tinyInteger('archived')->default(0);
             $table->timestamps();
         });
     }

@@ -11,7 +11,7 @@
 
     <!-- Title Page-->
     <title>Royal Hotel |Dashboard</title>
-    <link rel="icon" href="{{asset('front/image/favicon.png')}}" type="image/png">
+    <link rel="icon" href="{{URL::to('front/image/logo.jpg')}}" type="image/png">
 
     <!-- Fontfaces CSS-->
     <link href="{{asset('back/css/font-face.css')}}" rel="stylesheet" media="all">
@@ -26,22 +26,24 @@
     <link href="{{asset('back/vendor/animsition/animsition.min.css')}}" rel="stylesheet" media="all">
     <link href="{{asset('back/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css')}}" rel="stylesheet" media="all">
     <link href="{{asset('back/vendor/wow/animate.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('back/vendor/css-hamburgers/hamburgers.min.css')}}" rel="stylesheet" media="all">
     <link href="{{asset('back/vendor/slick/slick.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('back/vendor/select2/select2.min.css')}}" rel="stylesheet" media="all">
     <link href="{{asset('back/vendor/perfect-scrollbar/perfect-scrollbar.css')}}" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
     <link href="{{asset('back/css/theme.css')}}" rel="stylesheet" media="all">
-    <link href="{{asset('back/vendor/dataTables/datatables.min.css')}}" rel="stylesheet" media="all">
     <!-- include summernote css/js -->
     <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
     <!-- include fullcalendar css/js -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fullcalendar/2.2.7/fullcalendar.min.css"/>
 
+    <script src='{{asset('back/calendar/dhtmlxscheduler.js?v=5.2.1')}}' type="text/javascript" charset="utf-8"></script>
+    <script src='{{asset('back/calendar/ext/dhtmlxscheduler_timeline.js?v=5.2.1')}}' type="text/javascript" charset="utf-8"></script>
+
+    <link rel='stylesheet' type='text/css' href='{{asset('back/calendar/dhtmlxscheduler_material.css?v=5.2.1')}}'>
+
 </head>
 
-<body class="animsition">
+<body class="animsition" >
 <div class="page-wrapper">
     <!-- HEADER MOBILE-->
     <header class="header-mobile d-block d-lg-none">
@@ -192,13 +194,8 @@
 <script src="{{asset('back/vendor/animsition/animsition.min.js')}}"></script>
 <script src="{{asset('back/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js')}}">
 </script>
-<script src="{{asset('back/vendor/counter-up/jquery.waypoints.min.js')}}"></script>
-<script src="{{asset('back/vendor/counter-up/jquery.counterup.min.js')}}">
-</script>
-<script src="{{asset('back/vendor/circle-progress/circle-progress.min.js')}}"></script>
 <script src="{{asset('back/vendor/perfect-scrollbar/perfect-scrollbar.js')}}"></script>
 <script src="{{asset('back/vendor/chartjs/Chart.bundle.min.js')}}"></script>
-<script src="{{asset('back/vendor/select2/select2.min.js')}}"></script>
 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment.min.js"></script>

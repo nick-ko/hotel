@@ -2,42 +2,313 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63ea9653-46e7-4d0b-99d9-6bde2f59d615" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/EventModel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/add-article.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/blog.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/backend/gallery.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/article-details.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/frontend/gallery.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/dhtmlxscheduler.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/dhtmlxscheduler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/dhtmlxscheduler_contrast_black.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/dhtmlxscheduler_contrast_white.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/dhtmlxscheduler_flat.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/dhtmlxscheduler_material.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/dhtmlxscheduler_terrace.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_active_links.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_agenda_view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_all_timed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_collision.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_container_autoresize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_csp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_daytimeline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_drag_between.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_editors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_expand.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_grid_view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_html_templates.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_key_nav.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_limit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_map_view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_minical.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_monthheight.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_multisection.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_multiselect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_multisource.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_mvc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_outerdrag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_pdf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_quick_info.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_readonly.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_recurring.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_serialize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_timeline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_tooltip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_treetimeline.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_units.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_url.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_week_agenda.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_wp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/ext/dhtmlxscheduler_year_view.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/but_repeat.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/buttons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/calendar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/clock_big.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/clock_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/collapse_expand_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/controls.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/databg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/databg_now.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/export_ical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/export_pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/images.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs/resize_dots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/arrow_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/arrow_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/but_repeat.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/calendar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/clock_big.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/clock_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/close_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/collapse_expand_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/controls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/databg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/databg_now.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/export_ical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/export_pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/resize_dots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_black/resizing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/arrow_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/arrow_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/but_repeat.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/calendar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/clock_big.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/clock_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/close_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/collapse_expand_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/controls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/databg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/export_ical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/export_pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/quick_info_edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/resize_dots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_contrast_white/resizing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/Shape.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/agenda-calendar-hov.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/agenda-calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/agenda_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/arrow_left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/arrow_left_hov.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/arrow_right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/arrow_right_hov.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/but_repeat.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/calendar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/clock_big.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/clock_small.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/close_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/collapse_expand_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/controls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/databg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/drag-horizontal.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/drag-vertical.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/export_ical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/export_pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/menu-down.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/resizing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/time.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_material/tree_arrow.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/arrow_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/arrow_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/but_repeat.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/calendar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/clock_big.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/clock_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/close_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/collapse_expand_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/controls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/databg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/databg_now.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/export_ical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/export_pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/resize_dots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_dhx_terrace/resizing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/agenda_bg.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/arrow_left.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/arrow_right.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/but_repeat.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/calendar.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/clock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/clock_big.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/clock_small.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/close_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/collapse_expand_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/controls.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/databg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/databg_now.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/export_ical.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/export_pdf.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/resize_dots.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/imgs_flat/resizing.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_be.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_jp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/locale_ua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_be.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/locale_recurring_ua.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_be.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_cn.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_de.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_el.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_en.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_es.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_fr.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_he.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_it.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_nl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_ro.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_ru.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/back/calendar/locale/recurring/repeat_template_sk.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/image/about.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/image/banner.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/image/banner_bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/image/bg1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/image/bg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/image/bg3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/image/home_1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/front/image/logo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/costumers.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/details-book.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/facture.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/histo_presta.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/prestation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/backend/room-task.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/frontend/book.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/daf31ff5-7cdc-4f1e-a38e-0056d75c71f7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/daf31ff5-7cdc-4f1e-a38e-0056d75c71f7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/hotel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/hotel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/EventModel.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Events.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Evenements.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BackendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BackendController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/BookController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/EventController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/EvenementController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RoomController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StatController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StatController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/back/css/theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/back/css/theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/front/js/lightgallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/js/lightgallery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_22_221452_create_books_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_22_221452_create_books_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_05_31_141541_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_05_31_141541_create_evenements_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/back/vendor/lightbox2/dist/js/lightbox-plus-jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/back/vendor/lightbox2/dist/js/lightbox-plus-jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/css/style (Mohammad Rocky's conflicted copy 2018-05-08).css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/css/style (Mohammad Rocky's conflicted copy 2018-05-08).css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/add.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/author.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/c1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/c2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/c3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/c4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/c5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/c6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/cat-post/cat-post-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/cat-post/cat-post-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/cat-post/cat-post-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/feature-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/main-blog/m-blog-1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/main-blog/m-blog-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/main-blog/m-blog-3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/main-blog/m-blog-4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/main-blog/m-blog-5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/next.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/post-img1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/post-img2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/post1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/post2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/post3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/post4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/prev.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/blog/s-img.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/instagram/Image-01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/instagram/Image-02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/instagram/Image-03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/instagram/Image-04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/instagram/Image-05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/instagram/Image-06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/instagram/Image-07.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/image/instagram/Image-08.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/scss/_banner.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/scss/_banner.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/front/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/front/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/A5_photo.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/A5_photo.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/backend/book.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/book.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/website/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/website/about.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/backend/website/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/website/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/emails/BookingMailing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/emails/BookingMailing.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/category.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/category.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/dash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/dash.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/room.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/room.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/backend/stats.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/backend/stats.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/article-details.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/article-details.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/booking.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/booking.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/contact.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/contact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/event.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/event.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/eventsearching.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/eventsearching.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/gallery.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/room.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/room.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/roomdetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/roomdetails.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/searching.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/searching.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/frontend/service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/service.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/includes/backSidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/backSidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/includes/bookmodal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/bookmodal.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/includes/frontFooter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/includes/frontFooter.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/front.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
@@ -50,6 +321,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -88,149 +362,11 @@
     </expand>
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/web.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="212" column="7" lean-forward="true" selection-start-line="212" selection-start-column="7" selection-end-line="212" selection-end-column="7" />
-              <folding>
-                <element signature="e#7#389#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BookController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="127" column="36" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
-              <folding>
-                <element signature="e#40#53#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Mail/BookingMail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-51" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Mail/ComfirmBooking.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/emails/comfirm.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/emails/BookingMailing.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/includes/backSidebar.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>banner_bg</find>
-      <find>chantier</find>
-      <find>room</find>
-      <find>category</find>
-      <find>$room_number</find>
-      <find>animated-thumbnials</find>
-      <find>restorant</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>room</replace>
-      <replace>book</replace>
-      <replace>event</replace>
-      <replace>restaurant</replace>
-    </replaceStrings>
+  <component name="FavoritesManager">
+    <favorites_list name="hotel" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/public/front/css/style.css" />
-        <option value="$PROJECT_DIR$/public/front/css/style (Mohammad Rocky's conflicted copy 2018-05-08).css" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/EventController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_05_31_141541_create_events_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/event.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/website/contact.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/website/service.blade.php" />
-        <option value="$PROJECT_DIR$/app/Exports/BooksExport.php" />
-        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
-        <option value="$PROJECT_DIR$/public/back/css/theme.css" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_11_095243_create_galleries_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/gallery.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BackendController.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/add-article.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/blog-details.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_12_024051_create_blogs_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/blog.blade.php" />
-        <option value="$PROJECT_DIR$/app/EventsModel.php" />
-        <option value="$PROJECT_DIR$/app/EventModel.php" />
-        <option value="$PROJECT_DIR$/config/app.php" />
-        <option value="$PROJECT_DIR$/resources/views/includes/bookmodal.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/book.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/front.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_16_020543_create_homes_table.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/eventsearching.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/searching.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/booking.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/contact.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/service.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/room.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/roomdetails.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/about.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/event.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_16_084953_create_comments_table.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/CommentController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BlogController.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/blog.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/article-details.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/website/home.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/frontend/gallery.blade.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2019_07_16_110042_create_abouts_table.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/WebController.php" />
-        <option value="$PROJECT_DIR$/resources/views/layouts/backend.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/website/about.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/BookController.php" />
-        <option value="$PROJECT_DIR$/resources/views/emails/BookingMailing.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/emails/comfirm.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/includes/backSidebar.blade.php" />
-      </list>
-    </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -328,81 +464,35 @@
       <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
       <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
       <path value="$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-dompdf" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="22" />
-    <option name="width" value="1386" />
-    <option name="height" value="788" />
-  </component>
+  <component name="ProjectId" id="1PPtSSUOTCorHu5MWez6XfQLMhK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Mail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hotel" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hotel" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="E:/ChapChap/WorkSpace/e-commerce" />
+    <property name="editor.config.ad.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/front/image" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\DevZone\hotel\public\front\image" />
       <recent name="E:\DevZone\hotel\public\images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WorkSpace\DevZone\hotel\public\front\image" />
+      <recent name="E:\WorkSpace\DevZone\hotel\public\images" />
+      <recent name="E:\WorkSpace\DevZone\hotel\public\back\calendar" />
       <recent name="E:\DevZone\hotel\public\back" />
     </key>
   </component>
@@ -474,408 +564,73 @@
       <workItem from="1562757882967" duration="2907000" />
       <workItem from="1562838028891" duration="14944000" />
       <workItem from="1562899071969" duration="12185000" />
-      <workItem from="1563126809913" duration="50127000" />
+      <workItem from="1563126809913" duration="54300000" />
+      <workItem from="1563353738151" duration="8152000" />
+      <workItem from="1563439838826" duration="15306000" />
+      <workItem from="1563528037413" duration="1374000" />
+      <workItem from="1563537465121" duration="1188000" />
+      <workItem from="1563786879389" duration="14462000" />
+      <workItem from="1563873286008" duration="9429000" />
+      <workItem from="1563958560841" duration="422000" />
+      <workItem from="1563959070929" duration="1094000" />
+      <workItem from="1563961670892" duration="713000" />
+      <workItem from="1563963155004" duration="2264000" />
+      <workItem from="1564049464317" duration="42000" />
+      <workItem from="1564132677487" duration="3448000" />
+      <workItem from="1564315064776" duration="22188000" />
+      <workItem from="1564412078016" duration="11852000" />
+      <workItem from="1564426182433" duration="10252000" />
+      <workItem from="1564517405179" duration="11141000" />
+      <workItem from="1564564657499" duration="5739000" />
+      <workItem from="1564653829814" duration="5665000" />
+      <workItem from="1564739392567" duration="1188000" />
+      <workItem from="1565003637566" duration="629000" />
+      <workItem from="1565020562768" duration="742000" />
+      <workItem from="1565106110924" duration="2878000" />
+      <workItem from="1565352967148" duration="2691000" />
+      <workItem from="1565558726180" duration="1419000" />
+      <workItem from="1565610042306" duration="7794000" />
+      <workItem from="1565633329644" duration="24000" />
+      <workItem from="1565662804665" duration="731000" />
+      <workItem from="1565787563871" duration="12000" />
+      <workItem from="1566296633951" duration="903000" />
+      <workItem from="1566309392352" duration="670000" />
+      <workItem from="1566383001353" duration="17945000" />
+      <workItem from="1566468022795" duration="302000" />
+      <workItem from="1566552151680" duration="18543000" />
+      <workItem from="1566653962697" duration="1916000" />
+      <workItem from="1566667353053" duration="161000" />
+      <workItem from="1566667746104" duration="377000" />
+      <workItem from="1566668168297" duration="168000" />
+      <workItem from="1566668839815" duration="1479000" />
+      <workItem from="1566694641821" duration="6549000" />
+      <workItem from="1566810826986" duration="1448000" />
     </task>
     <servers />
   </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="446779000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13388805" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="npm" order="2" side_tool="true" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32991454" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32991454" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.35555556" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" weight="0.32980332" />
-    </layout>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="16" column="8" lean-forward="true" selection-start-line="16" selection-start-column="8" selection-end-line="41" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BackendController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2576">
-          <caret line="120" column="68" selection-start-line="120" selection-start-column="68" selection-end-line="120" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/room.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="56" selection-start-line="5" selection-start-column="56" selection-end-line="5" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/images/blog.php" />
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/event.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1150">
-          <caret line="90" column="79" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_12_024051_create_blogs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="21" column="47" selection-start-line="21" selection-start-column="47" selection-end-line="21" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/booking.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1426" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/Facades/Calendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Events.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/Calendar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2576">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/maddhatter/laravel-fullcalendar/src/MaddHatter/LaravelFullcalendar/Event.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/EventsModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="13" column="30" selection-end-line="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/EventModel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
-          <caret line="179" column="56" selection-start-line="179" selection-start-column="56" selection-end-line="179" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/includes/bookmodal.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/book.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/front.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="42" column="103" selection-start-line="42" selection-start-column="103" selection-end-line="42" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_16_020543_create_homes_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="28" selection-end-column="56" />
-          <folding>
-            <element signature="e#50#2011#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/eventsearching.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
-          <folding>
-            <element signature="e#50#1803#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/searching.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="29" column="56" selection-start-line="29" selection-start-column="56" selection-end-line="29" selection-end-column="56" />
-          <folding>
-            <element signature="e#50#1793#0#HTML" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/booking.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/contact.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="50" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/service.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/room.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/roomdetails.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="18" column="50" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/about.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/event.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/add-article.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="51" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/blog.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CommentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/EventController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="23" selection-end-column="73" />
-          <folding>
-            <element signature="e#40#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="777">
-          <caret line="62" column="27" lean-forward="true" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_16_084953_create_comments_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BlogController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="170" column="34" selection-start-line="170" selection-start-column="34" selection-end-line="170" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/blog.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="108" column="28" selection-start-line="108" selection-start-column="28" selection-end-line="116" selection-end-column="35" />
-          <folding>
-            <element signature="e#4476#5968#0#HTML" />
-            <element signature="e#6873#6896#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/gallery.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="24" column="124" selection-start-line="24" selection-start-column="124" selection-end-line="24" selection-end-column="124" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/gallery.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_07_16_110042_create_abouts_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="18" column="40" lean-forward="true" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/website/home.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="36" column="65" selection-start-line="36" selection-start-column="65" selection-end-line="36" selection-end-column="90" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/layouts/backend.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/website/about.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="27" column="89" selection-start-line="27" selection-start-column="89" selection-end-line="27" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WebController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="78" column="22" lean-forward="true" selection-start-line="78" selection-start-column="22" selection-end-line="78" selection-end-column="22" />
-          <folding>
-            <element signature="e#40#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/frontend/article-details.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="501">
-          <caret line="132" column="35" selection-start-line="132" selection-start-column="35" selection-end-line="132" selection-end-column="35" />
-          <folding>
-            <element signature="e#8079#8102#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="212" column="7" lean-forward="true" selection-start-line="212" selection-start-column="7" selection-end-line="212" selection-end-column="7" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BookController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="127" column="36" selection-start-line="127" selection-start-column="36" selection-end-line="127" selection-end-column="36" />
-          <folding>
-            <element signature="e#40#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mail/BookingMail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-51" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mail/ComfirmBooking.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/BookingMailing.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/emails/comfirm.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/includes/backSidebar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="38" column="46" selection-start-line="38" selection-start-column="46" selection-end-line="38" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

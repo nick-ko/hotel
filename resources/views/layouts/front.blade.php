@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" href="{{asset('front/image/favicon.png')}}" type="image/png">
+    <link rel="icon" href="{{URL::to('front/image/logo.jpg')}}" type="image/png">
     <title>Royal Hotel</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="{{asset('front/css/bootstrap.css')}}">
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{asset('front/css/responsive.css')}}">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
     {!! Charts::styles() !!}
 </head>
 <body>

@@ -52,18 +52,20 @@ Route::post('/contact-us', [
 
 Route::get('/downloadExcel', 'BookController@downloadExcel');
 
+Route::get('/download', 'CostumersController@downloadExcel');
+
 Route::post('/searching', [
     'as' => 'searching',
     'uses' => 'RoomController@search'
 ]);
 
 Route::post('/searching-event', [
-    'uses' => 'EventController@search'
+    'uses' => 'EvenementController@search'
 ]);
 
 Route::get('/event-type/{type}', [
     'as' => 'details',
-    'uses' => 'EventController@event_type'
+    'uses' => 'EvenementController@event_type'
 ]);
 
 Route::get('/room-details/{id}', [
@@ -74,6 +76,10 @@ Route::get('/room-details/{id}', [
 Route::post('/dashboard/booking', [
     'as' => 'booking',
     'uses' => 'BookController@save'
+]);
+Route::post('/dashboard/book/', [
+    'as' => 'book',
+    'uses' => 'BookController@book_room'
 ]);
 
 Route::post('/dashboard/backend-booking', [
@@ -125,6 +131,17 @@ Route::middleware(['auth'])->group(function () {
         'as' => 'dashroom',
         'uses' => 'BackendController@room'
     ]);
+    Route::get('/dashboard/task-room', [
+        'as' => 'taskroom',
+        'uses' => 'RoomController@room_task'
+    ]);
+
+    Route::get('/dashboard/data-room', [
+        'as' => 'dataroom',
+        'uses' => 'RoomController@room_data'
+    ]);
+
+
     Route::post('/dashboard/add-category', [
         'as' => 'add.category',
         'uses' => 'CategoryController@add'
@@ -166,11 +183,11 @@ Route::middleware(['auth'])->group(function () {
 
     Route::get('/dashboard/event', [
         'as' => 'dash.event',
-        'uses' => 'EventController@event'
+        'uses' => 'EvenementController@event'
     ]);
     Route::post('/dashboard/add-event', [
         'as' => 'add.event',
-        'uses' => 'EventController@add'
+        'uses' => 'EvenementController@add'
     ]);
     Route::get('/dashboard/users', [
         'as' => 'users',
@@ -226,6 +243,44 @@ Route::middleware(['auth'])->group(function () {
         'uses' => 'WebController@about'
     ]);
 
+    //costumer
+    Route::get('/dashboard/costumers', [
+        'as' => 'costumers',
+        'uses' => 'CostumersController@index'
+    ]);
+
+    //prestation root
+    Route::get('/dashboard/prestation', [
+        'as' => 'prestation',
+        'uses' => 'PrestationController@index'
+    ]);
+
+    Route::post('/dashboard/add-presta', [
+        'uses' => 'PrestationController@store'
+    ]);
+
+    Route::post('/dashboard/do-presta', [
+        'uses' => 'PrestationController@create'
+    ]);
+
+    Route::get('/dashboard/histo-prestation', [
+        'as' => 'histo-prestation',
+        'uses' => 'PrestationController@show'
+    ]);
+
+    Route::get('/dashboard/archive-book/{id}', [
+        'uses' => 'BookController@archive',
+        'as' => 'archive'
+    ]);
+
+    Route::get('/dashboard/reservation/detail/{id}', [
+        'uses' => 'BookController@show',
+        'as' => 'book-details'
+    ]);
+
+    Route::get('/dashboard/reservation/export-pdf/{id}', [
+        'uses' => 'BookController@downloadPdf'
+    ]);
 
 
 

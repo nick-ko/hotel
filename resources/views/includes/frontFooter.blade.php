@@ -4,7 +4,8 @@
         <div class="row">
             <div class="col-lg-4  col-md-6 col-sm-6">
                 <div class="single-footer-widget">
-                    <h6 class="footer_title">Royal Hotel</h6>
+                    <h6 class="footer_title">Bushman Hotel Café</h6>
+                    <img src="{{URL::to('front/image/logo.jpg')}}" alt="" style="height: 150px">
                     <p>
                     <h5>Un sejour inoubliable</h5>
                     Raffinement au savoir vivre ivoirien,l'élégence d'un decor Belle Epoque,

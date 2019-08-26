@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Book;
+use App\Event;
 use App\Room;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Category;
+use MaddHatter\LaravelFullcalendar\Facades\Calendar;
 
 class RoomController extends Controller
 {
@@ -21,9 +24,7 @@ class RoomController extends Controller
             'room_price' => 'required',
             'room_size' => 'required',
             'room_category' => 'required',
-            'room_number' => 'required',
             'room_description' => 'required',
-
         ]);
 
         $room_code = $request['room_code'];
@@ -31,7 +32,6 @@ class RoomController extends Controller
         $room_price = $request['room_price'];
         $room_size = $request['room_size'];
         $room_category = $request['room_category'];
-        $room_number = $request['room_number'];
         $room_description = $request['room_description'];
 
 
@@ -46,8 +46,6 @@ class RoomController extends Controller
         $room->room_code=$room_code;
         $room->room_size=$room_size;
         $room->room_category=$category->category_title;
-        $room->room_number=$room_number;
-        $room->total_room=$room_number;
         $room->room_description=$room_description;
        
 
@@ -145,4 +143,22 @@ class RoomController extends Controller
         }
 
     }
+
+    public function room_data(){
+        $events = DB::table('books')
+            ->where('book_status','=' ,1)
+            ->get();
+
+        return response()->json([
+            "data" => $events
+        ]);
+    }
+
+    public function room_task(){
+        $books = new Room();
+        $result=$books->all();
+        return view('backend.room-task',compact('result'));
+    }
+
+
 }

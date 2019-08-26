@@ -69,8 +69,8 @@
                                 </div>
                                 <br>
                                 <div class="text">
-                                    <h2></h2>
-                                    <span>statistique</span>
+                                    <h2>{{count($costumers)}}</h2>
+                                    <span>Clients</span>
                                 </div>
                             </div>
                         </div>

@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Events;
+use App\Evenements;
 use App\Mail\ContactUs;
 use Illuminate\Http\Request;
 use App\Room;
@@ -36,7 +36,7 @@ class HomeController extends Controller
     public function service(){ return view('frontend.service');}
 
     public function event(){
-        $events=Events::all();
+        $events=Evenements::all();
         return view('frontend.event')->with('events',$events);
     }
 

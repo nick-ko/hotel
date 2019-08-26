@@ -5,7 +5,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <!-- Brand and toggle get grouped for better mobile display -->
-                <a class="navbar-brand logo_h" href="index.html"><img src="{{URL::to('front/image/Logo.png')}}" alt=""></a>
+                <a class="navbar-brand logo_h" href="index.html"><img src="{{URL::to('front/image/logo.jpg')}}" alt="" style="height: 80px"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -49,7 +49,7 @@
         <div class="overlay bg-parallax" data-stellar-ratio="0.8" data-stellar-vertical-offset="0" data-background="">
         </div>
         <div class="container">
-            
+
             <div class="row mb_30">
                 <div class="col-lg-4 col-md-6">
                     <div class="facilities_item">

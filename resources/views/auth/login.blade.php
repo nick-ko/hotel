@@ -20,6 +20,7 @@
 
     <!-- Bootstrap CSS-->
     <link href="{{asset('back/')}}vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link rel="icon" href="{{URL::to('front/image/logo.jpg')}}" type="image/png">
 
     <!-- Vendor CSS-->
     <link href="{{asset('back/vendor/animsition/animsition.min.css')}}" rel="stylesheet" media="all">
@@ -43,7 +44,7 @@
                 <div class="login-content">
                     <div class="login-logo">
                         <a href="#">
-                            <img src="{{URL::to('front/image/Logo.png')}}" alt="logo">
+                            <img src="{{URL::to('front/image/logo.jpg')}}" style="height: 200px" alt="logo">
                         </a>
                     </div>
                     <div class="login-form">
@@ -78,7 +79,7 @@
                                 <br><br>
                             </div>
                             <br>
-                            <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">connexion</button>
+                            <button class="au-btn au-btn--block au-btn--blue m-b-20" type="submit">connexion</button>
                         </form>
 
                     </div>
