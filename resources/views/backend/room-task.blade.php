@@ -5,7 +5,7 @@
     <script src='{{asset('back/calendar/dhtmlxscheduler.js?v=5.2.1')}}' type="text/javascript" charset="utf-8"></script>
     <script src='{{asset('back/calendar/ext/dhtmlxscheduler_timeline.js?v=5.2.1')}}' type="text/javascript" charset="utf-8"></script>
     <script src='{{asset('back/calendar/codebase/ext/dhtmlxscheduler_tooltip.js?v=5.2.1')}}' type="text/javascript" charset="utf-8"></script>
-    <link rel="icon" href="{{asset('front/image/favicon.png')}}" type="image/png">
+    <link rel="icon" href="{{asset('front/image/logo.jpg')}}" type="image/png">
     <link rel='stylesheet' type='text/css' href='{{asset('back/calendar/dhtmlxscheduler_material.css?v=5.2.1')}}'>
 
 
@@ -27,7 +27,7 @@
         <div class="dhx_cal_next_button">&nbsp;</div>
         <div class="dhx_cal_today_button"></div>
         <div class="dhx_cal_date"></div>
-        <img src="{{URL::to('front/image/Logo.png')}}" alt="Cool Admin" />
+        <img src="{{URL::to('front/image/logo.jpg')}}" alt="" style="height: 80px" />
     </div>
     <div class="dhx_cal_header">
     </div>

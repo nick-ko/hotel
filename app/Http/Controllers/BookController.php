@@ -299,7 +299,6 @@ class BookController extends Controller
         $book->pays=$pays;
         $book->booking_total=$total;
 
-
         $mailable=new BookingMail($request['book_name'],$total,$request['book_from'],$request['book_to']);
         Mail::to($request['book_email'])->send($mailable);
         $room_number=$room_number-1;
@@ -326,6 +325,7 @@ class BookController extends Controller
             ->where('id',$id)
             ->first();
         $pdf= PDF::loadView('backend.facture',compact('booking'))->setPaper('a4','portrait');
+
 
         $fileName='facture_'.$booking->text;
         return $pdf->download($fileName.'.pdf');
